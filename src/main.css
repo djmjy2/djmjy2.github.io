@@ -1,32 +1,38 @@
-body {
+.body__container {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
+  color: black;
   margin: 0;
   padding: 0;
 }
 
-.header {
-  border-bottom: 1px solid lightgray;
+/* Button */
+.btn {
+  height: 34px;
+  background: #eee linear-gradient(to bottom, #fcfcfc, #eee);
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
 }
-
-.container {
-  width: 1000px;
-  margin : auto;
-  padding : 10px;
-}
-
-.container-left{
-
-}
-
-.menu-item {
-  float: left;
-  margin-right: 20px;
-  padding: 5px;
-}
-
-.clearfix::after {
+.btn:hover::before {
   content: "";
-  display: block;
-  clear: both;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.07);
+}
+.btn.btn--primary {
+  border: 1px solid #65b836;
+  color: #fff;
+  background: #55a532 linear-gradient(#91dd70, #55ae2e);
 }
