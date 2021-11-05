@@ -1,9 +1,27 @@
+/* COMMON */
 .body__container {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
   color: black;
+  text-decoration: none;
   margin: 0;
   padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* FLOAT CLEARFIX */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.float--left{
+  float: left;
+}
+.float--right{
+  float: right;
 }
 
 /* Button */
@@ -21,6 +39,7 @@
   cursor: pointer;
   box-sizing: border-box;
   position: relative;
+  color: #333;
 }
 .btn:hover::before {
   content: "";
@@ -76,4 +95,9 @@ header .gnb li a {
 }
 header .gnb li a:hover {
   color: rgb(72, 62, 129);
+}
+header .site-group {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
