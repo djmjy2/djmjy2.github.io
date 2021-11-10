@@ -101,3 +101,18 @@ header .site-group {
   align-items: center;
   height: 100%;
 }
+
+/* CONTENT */
+.content-text-center {
+  text-align: center;
+}
+
+.content-text-left {
+  text-align: left;
+}
+
+.content-box {
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
